@@ -1,0 +1,195 @@
+/* RESET */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  /* max-width: 100%; */
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button,
+input {
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+input[type="text"],
+input[type="number"] {
+  cursor: text;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  color: inherit;
+  text-decoration: unset;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-container {
+  font-size: 1.2rem;
+  padding: 1.2rem;
+  margin: 0 auto;
+  box-shadow: rgba(239, 237, 237, 0.345) 0px 1px 4px;
+}
+
+main {
+  text-align: center;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 15px;
+}
+
+.btn {
+  padding: 10px 15px;
+  border-radius: 0.5rem;
+  background-color: darkgray;
+}
+
+.btn:hover {
+  filter: brightness(80%);
+}
+
+.modal-btn {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.modal-btn:hover {
+  background: none;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 25px;
+  line-height: 1.5;
+  gap: 15px;
+  background-color: rgba(128, 128, 128, 0.279);
+  padding: 20px;
+  border-radius: 0.5rem;
+}
+
+.btn-grp {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.read {
+  background-color: lightgreen;
+}
+
+.not-read {
+  background-color: lightcoral;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-overlay.active {
+  display: block;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  padding: 20px;
+  border-radius: 0.5rem;
+  background-color: grey;
+  text-align: center;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.2s ease-in-out;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.add-book-form {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.add-book-form button {
+  width: 100%;
+  background-color: lightgreen;
+  color: ghostwhite;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 0.5rem;
+  color: black;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+  accent-color: white;
+}
