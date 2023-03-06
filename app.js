@@ -27,7 +27,7 @@ function Book(title, author, pages, read) {
 }
 
 function isInLibrary(bookTitle) {
-  return myLibrary.find((item) => item.title === bookTitle);
+  return myLibrary.some((item) => item.title === bookTitle);
 }
 
 function getBook(title) {
